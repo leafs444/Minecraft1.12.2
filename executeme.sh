@@ -15,11 +15,11 @@ cd ~/Minecraft
 java -jar Minecraft.jar
 cd ~/Minecraft/Natives && wget https://www.dropbox.com/s/4oxcvz3ky7a3x6f/liblwjgl.so && wget https://www.dropbox.com/s/m0r8e01jg2og36z/libopenal.so
 cd ~/.minecraft/libraries/org/lwjgl/lwjgl/lwjgl/2.9.4-nightly-20150209 && rm lwjgl-2.9.4-nightly-20150209.jar; wget https://www.dropbox.com/s/mj15sz3bub4dmr6/lwjgl-2.9.4-nightly-20150209.jar
-wget https://optifine.net/downloadx?f=OptiFine_1.12.2_HD_U_C9.jar&x=89339d1eda706b43aece263ef4910a76
-mv download?f=OptiFine_1.12.2_HD_U_C9 ~/Downloads/OptiFineInstall
+git clone https://github.com/leafs444/optifine1.12.2c9.git
+mv optifine1.12.2c9/OptiFine_1.12.2_HD_C9.jar ~/Downloads/OptiFineInstall
 cat ~/Minecraft1.12.2/text/optifine
 sleep 10s
-cd ~/Downloads && java -jar OptiFine_1.12.1_HD_U_C5.jar
+cd ~/Downloads && java -jar OptiFineInstall
 cat ~/Minecraft1.12.2/text/launcher2
 sleep 10s
 cd ~/Minecraft && java -jar Minecraft.jar
